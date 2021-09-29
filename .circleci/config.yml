@@ -7,9 +7,8 @@ jobs:
     steps:
       - run:
           name: Greet
-          command: echo "I love ${COLOR} builds."
-          environment:
-            COLOR: "green"
+          command: sleep 10
+          no_output_timeout: 3s
 
 workflows:
   main:
